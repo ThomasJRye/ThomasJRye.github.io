@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Exo;
+    src: url(Exo2-Light.ttf);  /* Puts in Exo2 Font */
+}
+
+.projects_container{
+    position: relative;
+    text-align: center;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.ReodorFront{
+    max-width: 69%;
+    height: auto;
+}
+
+.novusLaunch{
+    max-width: 25%;
+    height: auto;
+}
+
+
+.apply:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.apply span {
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.apply span:after {
+    content: '\00bb';
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.apply:hover span {
+    padding-right: 25px;
+}
+
+.apply:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .split {
+        width: 90%;
+    }
+    .left{
+        right: 0;
+        margin-left: 5%;
+
+    }
+    .right{
+        left: 0;
+        margin-left: 5%;
+
+    }
+    .project_container{
+        height: 45vh;
+    }
+    .projects_container{
+        padding-top: 15%;
+        height: auto;
+    }
+}

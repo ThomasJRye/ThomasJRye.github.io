@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Exo;
+    src: url(Exo2-Light.ttf);  /* first font == regular */
+}
+
+.hero_container{
+    background-image: url("../images/hero_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: -20px;
+    height: 100vh;
+    font-family: Exo;
+}
+
+.hero_txt_container{
+    margin: 20px;
+    top: 20%;
+    position: absolute;
+    margin-left: 3rem;
+
+}
+
+.hero_txt_container p{
+    color: whitesmoke;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+
+.hero_txt_container h1{
+    color: whitesmoke;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 7rem;
+    font-family: Exo;
+}
+
+@media screen and (max-width: 600px) {
+    .hero_txt_container h1 {
+        font-size: 5rem;
+        font-family: Exo;
+    }
+    .hero_txt_container{
+        margin: 20px;
+    }
+    .hero_container{
+        background-image: url("../images/mobile_hero.png");
+    }
+}
+
